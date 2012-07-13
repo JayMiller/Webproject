@@ -11,13 +11,20 @@ form {
 
 
 .name{
-	float: left;
+	float: right;
+	padding: 20px;
 	width: 240px;
-
-	padding
+	height: 240px;
 }
 
- #firstname #lastname {
+#firstname {
+	float: left;
+}
+#lastname {
+	float: right;
+}
+
+input #firstname #lastname {
 	width: 110px;
 	height: 30px;
 }
@@ -35,9 +42,6 @@ form {
 	width: 366px;
 }
 
-#message label {
-
-}
 
 .menu {
 	float: right;
