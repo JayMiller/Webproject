@@ -4,20 +4,15 @@
 **************************
 */
 
-.form {
+form {
 	height: 240px;
-	width: 810px;
-	background: url(style/images/bigback.jpg) repeat;
+	background: url(style/images/bigback.jpg);
 }
 
-form h1 {
-	font: 3.5em;
-	float: left;
-	color: #5b6363;
-}
 
 .name{
 	float: left;
+	width: 240px;
 }
 
 .email {
@@ -41,7 +36,6 @@ form h1 {
 */
 
 .social {
-	width: 810px;
 	display: inline;
 	height: 22px;
 }
@@ -53,10 +47,15 @@ form h1 {
 */
 
 .wrap {
-	width: 960px;
+	width: 810px;
 	margin: auto;
 	font-family: 'PT Sans', sans-serif;
-	text-align: center;
+	
+}
+
+a {
+	color: rgb(248,103,103);
+	text-decoration: none;
 
 }
 
@@ -70,6 +69,14 @@ form h1 {
 }
 
 .dropdown li {
+}
+
+h1 {
+	font: 3.5em;
+	float: left;
+	color: #5b6363;
+	text-transform: uppercase;
+	text-indent: 10px;
 
 }
 
@@ -92,7 +99,7 @@ header nav {
 }
 
 nav .nav li{
-	float: right;
+	float: left;
 	display: inline;
 	margin: 0px -10px;
 	padding: 50px 18px;
@@ -103,7 +110,6 @@ nav .nav li{
 }
 
 nav .nav li a {
-	text-decoration: none;
 	padding: 6px 12px;
 	
 }
@@ -137,6 +143,8 @@ nav .nav li a:hover {
 }
 
 
+
+
 /*
 **************************
 * =service
@@ -144,7 +152,11 @@ nav .nav li a:hover {
 */
 
 .service {
+	height: 326px;
+}
 
+.service img {
+	float: left;
 }
 
 
@@ -170,10 +182,13 @@ nav .nav li a:hover {
 
 footer {
 	clear: both;
+	height: 75px;
 
 }
 
 footer ul li {
 	display: inline;
 	float: left;
+	margin: auto;
+	padding: 20px 0px 40px 0px;
 }
