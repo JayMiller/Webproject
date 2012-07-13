@@ -13,7 +13,13 @@ form {
 .name{
 	float: left;
 	width: 240px;
-	display: inline;
+
+	padding
+}
+
+ #firstname #lastname {
+	width: 110px;
+	height: 30px;
 }
 
 .email {
@@ -27,6 +33,10 @@ form {
 #message {
 	height: 122px;
 	width: 366px;
+}
+
+#message label {
+
 }
 
 .menu {
@@ -52,8 +62,9 @@ form {
 **************************
 */
 
+
 .wrap {
-	width: 810px;
+	width: 830px;
 	margin: auto;
 	font-family: 'PT Sans', sans-serif;
 	
@@ -86,6 +97,17 @@ h1 {
 
 }
 
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
 
 /*
 **************************
@@ -131,7 +153,10 @@ nav .nav li a:hover {
 	display: inline;
 }
 
-
+#map {
+	border: 10px solid rgb(91, 99, 99) inherit; 
+	border-style: solid;
+}
 
 
 /*
@@ -161,8 +186,10 @@ nav .nav li a:hover {
 	height: 326px;
 }
 
-.service img {
+.img {
 	float: left;
+	border-width: 10px;
+	border-color: rgb(91, 99, 99);
 }
 
 
@@ -176,6 +203,10 @@ nav .nav li a:hover {
 .update {
 			height: 435px;
 			margin: auto;
+}
+
+.update dl dt dd {
+	display: inline;
 }
 
 
