@@ -1,0 +1,179 @@
+/*
+**************************
+* =form
+**************************
+*/
+
+.form {
+	height: 240px;
+	width: 810px;
+	background: url(style/images/bigback.jpg) repeat;
+}
+
+form h1 {
+	font: 3.5em;
+	float: left;
+	color: #5b6363;
+}
+
+.name{
+	float: left;
+}
+
+.email {
+	text-align: left;
+}
+
+.message {
+	float: left;
+}
+
+.menu {
+	float: right;
+}
+
+
+
+/*
+**************************
+* =social
+**************************
+*/
+
+.social {
+	width: 810px;
+	display: inline;
+	height: 22px;
+}
+
+/*
+**************************
+* =body
+**************************
+*/
+
+.wrap {
+	width: 960px;
+	margin: auto;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+
+}
+
+.social ul li {
+	display: inline;
+}
+
+
+.dropdown {
+	border: 2em;
+}
+
+.dropdown li {
+
+}
+
+
+/*
+**************************
+* =heading
+**************************
+*/
+
+nav img {
+	float: left;
+	padding: 50px 0px 50px 0px;
+
+}
+
+header nav {
+	width: 810px;
+	height: 125px;
+}
+
+nav .nav li{
+	float: right;
+	display: inline;
+	margin: 0px -10px;
+	padding: 50px 18px;
+	text-transform: uppercase;
+	color: #f98181;
+
+
+}
+
+nav .nav li a {
+	text-decoration: none;
+	padding: 6px 12px;
+	
+}
+
+nav .nav li a:hover {
+	background: #f86767;
+	color: white;
+
+}
+
+.live {
+	height:28px;
+	display: inline;
+}
+
+
+
+
+/*
+**************************
+* =main
+**************************
+*/
+
+.main {
+	height: 280px;
+}
+
+.main img {
+	float: left;
+}
+
+
+/*
+**************************
+* =service
+**************************
+*/
+
+.service {
+
+}
+
+
+
+/*
+**************************
+* =update
+**************************
+*/
+
+.update {
+			height: 435px;
+			margin: auto;
+}
+
+
+
+/*
+**************************
+* =footer
+**************************
+*/
+
+footer {
+	clear: both;
+
+}
+
+footer ul li {
+	display: inline;
+	float: left;
+}
