@@ -8,134 +8,151 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-
  <!--********** form **********-->
 
+ 	<div id="contact">
+ 		<div class="inner">
+			<form class="form group" action="#" method="post">
+				
+				<div class="connect">
+					<h1> Contact us.</h1>
 
-	<form class="form" class="group" action="#" method="post">
+					<h2> close </h2>
+				</div>
+
+				<div class="name" class"group">
+					<p>name</p>
+					<input id="firstname" name="firstname" type="text" placeholder="first">
+
+					<input id="lastname" name="lastname" type="text" placeholder="last">
 			
-		<h1> Contact us.</h1>
+					<p id="name"> email address</p>
+					<input id="email" name="email" type="text">
+				</div>
 
-		<p>name</p>
+				<div class="message" >
+					<h2> Your Message</h2>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</div>
 
-		<div class="name" class"group">
-			<input id="firstname" name="firstname" type="text" value="first">
+				<div class="menu" >
+					<input id="submit" type="submit" value="submit">
 
-			<input id="lastname" name="lastname" type="text" value="last">
-	
-			<label for="email">Email Addresss</label>
-			<input id="email" name="email" type="text">
+				
+					<ul class="dropdown">
+						<li> <a href="#">Campuses</a>
+							<li> <a href="#">Cabot</a> </li>
+							<li class="current"> <a href="#">Conway</a></li>
+							<li> <a href="#">GLR</a></li>
+							<li> <a href="#">Fort Smith</a></li>
+							<li> <a href="#">Hot Springs</a></li>
+							<li> <a href="#">Heber Springs</a></li>
+						</li>
+					</ul>
+			
+				</div>	
+			</form>
 		</div>
-
-		<div class="message" >
-			<label for="message">Your Message</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-		</div>
-
-		<div class="menu" >
-			<input id="submit" type="submit" value="submit">
-
-		
-			<ul class="dropdown">
-				<li> <a href="#">Campuses</a>
-					<li> <a href="#">Cabot</a> </li>
-					<li class="current"> <a href="#">Conway</a></li>
-					<li> <a href="#">GLR</a></li>
-					<li> <a href="#">Fort Smith</a></li>
-					<li> <a href="#">Hot Springs</a></li>
-					<li> <a href="#">Heber Springs</a></li>
-				</li>
-			</ul>
-	
-		</div>	
-	</form>
-
-
-<!--********** social **********-->
-
-	<div class="social">
-		<div class="dropdown">
-			<ul>
-				<li>Cabot</li>
-				<li>Conway</li>
-				<li>Fort Smith</li>
-				<li>GLR</li>
-				<li>Heber Springs</li>
-				<li>Hot Springs</li>
-			</ul>
-		</div>
-		<ul>
-			<li>Contact us</li>
-			<li>giving</li>
-			<li>theCity</li>
-			<li>Facebook</li>
-			<li>Twitter</li>
-		</ul>
 	</div>
 
+<!--********** social **********-->
+<div id="media">
+	<div class="inner">
+		<div class="social">
+			<div class="dropdown">
+				<ul>
+					<li>Cabot</li>
+					<li>Conway</li>
+					<li>Fort Smith</li>
+					<li>GLR</li>
+					<li>Heber Springs</li>
+					<li>Hot Springs</li>
+				</ul>
+			</div>
+
+			<ul class="logo">
+				<li>Contact us</li>
+				<li>giving</li>
+				<li>theCity</li>
+				<li>Facebook</li>
+				<li>Twitter</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 <!--********** header **********-->
 
-	
-	<header>
-			
-			
-		<nav class="clearfix">
-			<img src="style/images/logo.png" alt="logo" id="map">
+<div id="header">	
+	<div class="inner">
+		<header>	
+			<nav class="clearfix">
+				<img src="style/images/logo.png" alt="logo" id="map">
 
-			<div class="nav" >
-				<ul>
-					<li><a href="#">Im new here</a></li>
-					<li><a href="#">Ministries</a></li>
-					<li><a href="#">Prayer</a></li>
-					<li><a href="#">Updates</a></li>
-				</ul>
-			</div>
-		</nav>
-			<div class="live">
-				<ul>
-					<li>next online service</li>
-					<li><a href="#">watch our most recent service now</a></li>
-				</ul>
-			</div>
-	</header>
+				<div class="nav" >
+					<ul>
+						<li><a href="#">Im new here</a></li>
+						<li><a href="#">Ministries</a></li>
+						<li><a href="#">Prayer</a></li>
+						<li><a href="#">Updates</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+	</div>
+</div>
+
+ <!--********** live **********-->
+
+<div id="live">	
+	<div class="inner">
+		<div class="live">
+			<h2>next online service</h2>
+			<p><a href="#">watch our most recent service now</a></p>
+		</div>
+	</div>
+</div>
+
 
 <!--********** campuse **********-->
-	
-	<div class="main group">
-		<div class="img">
-			<img src="style/images/map.jpg" alt="map" id="map">
+
+	<div id="main">
+		<div class="inner group">
+			<div class="img">
+				<img src="style/images/map.jpg" alt="map" id="map">
+			</div>
+			
+				<ul class="dropdown">
+					<li>Cabot</li>
+					<li>Conway</li>
+					<li>Fort Smith</li>
+					<li>GLR</li>
+					<li>Heber Springs</li>
+					<li>Hot Springs</li>
+				</ul>
+			
 		</div>
-		<div class="dropdown">
-			<ul>
-				<li>Cabot</li>
-				<li>Conway</li>
-				<li>Fort Smith</li>
-				<li>GLR</li>
-				<li>Heber Springs</li>
-				<li>Hot Springs</li>
-			</ul>
-		</div>
-		
 	</div>
 
 
  <!--********** service **********-->
 
-	<div class="service">
-		<h1>Recent Services</h1>
-
-		<div class"img">
-		<img src="style/images/worship.jpg" alt="">
+	<div id="service">
+		<div class="inner">
+			<div class"img">
+				<h1>Recent Services</h1>
+				
+				<img src="style/images/worship.jpg" alt="" id="worship">
+			</div>
 		</div>
 	</div>
 
 
  <!--********** updates **********-->
 
-	<div class="update">
+	<div id="update">
+		<div class="inner">
 		<h1>Recent Updates</h1>
 
 		<dl>
@@ -150,12 +167,12 @@
 		</dl>
 
 		<img src="style/images/footerback.png" alt="">
-
+		</div>
 	</div>
 
  <!--********** footer **********-->
 
-	<div>
+	<div id="other">
 		<footer>
 			<ul>
 				<li>Internet Campus</li>

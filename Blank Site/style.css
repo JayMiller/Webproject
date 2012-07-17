@@ -4,24 +4,69 @@
 **************************
 */
 
-form {
+#contact {
 	height: 240px;
-	background: url(style/images/bigback.jpg);
+}
+
+.connect {
+	height: 60px;
+}
+
+.connect h2 {
+	float: right;
+}
+
+.connect h1, h2 {
+	padding: 26px 0 10px 10px;
 }
 
 
 .name{
 	float: left;
-	width: 240px;
-	display: inline;
+	width: 260px;
+	padding: 0px 15px 0 10px;
+}
+
+.name p {
+	padding: 0 0 7px 7px;
+	clear: both;
+}
+
+#name {
+	padding-top: 15px;
+}
+
+
+#firstname {
+	
+	width: 110px;
+}
+
+#lastname {
+
+	width: 140px;
+}
+
+#firstname, #lastname {
+	height: 30px;
+	float: left;
 }
 
 .email {
 	text-align: left;
 }
 
+#email {
+	width: 90px 185px;
+}
+
 .message {
 	float: left;
+	padding: 0px 15px 36px 15px;
+}
+
+.message h2 {
+	padding: 0 0 7px 7px;
 }
 
 #message {
@@ -29,8 +74,11 @@ form {
 	width: 366px;
 }
 
+
 .menu {
 	float: right;
+	width: 115px;
+	padding: 0 3 0 15px;
 }
 
 
@@ -46,17 +94,27 @@ form {
 	height: 22px;
 }
 
+.dropdown {
+	float: left;
+}
+
+.logo {
+	float: left;
+}
+
 /*
 **************************
 * =body
 **************************
 */
 
-.wrap {
-	width: 810px;
+
+.inner {
+	width: 830px;
 	margin: auto;
 	font-family: 'PT Sans', sans-serif;
-	
+	text-transform: uppercase;
+	color: rgb(129,135,135);
 }
 
 a {
@@ -80,11 +138,45 @@ a {
 h1 {
 	font: 3.5em;
 	float: left;
-	color: #5b6363;
+	color: rgb(45,49,49);
 	text-transform: uppercase;
 	text-indent: 10px;
-
 }
+
+
+#contact, #main, #other {
+	background: url(style/images/background.jpg);
+}
+
+#header, #service {
+	background: url(style/images/lowback.png);
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+/*
+**************************
+* =media
+**************************
+*/
+
+#media {
+	height: 21px;
+}
+
+
+
 
 
 /*
@@ -93,20 +185,22 @@ h1 {
 **************************
 */
 
-nav img {
-	float: left;
-	padding: 50px 0px 50px 0px;
-
-}
-
-header nav {
-	width: 810px;
+header {
 	height: 125px;
 }
+
+nav img {
+	float: left;
+	margin: auto;
+	padding: 40px 50px 40px 0px;
+}
+
+
 
 nav .nav li{
 	float: left;
 	display: inline;
+	padding: 50px 0px 50px 50px;
 	margin: 0px -10px;
 	padding: 50px 18px;
 	text-transform: uppercase;
@@ -126,12 +220,30 @@ nav .nav li a:hover {
 
 }
 
-.live {
-	height:28px;
-	display: inline;
+
+/*
+**************************
+* =live
+**************************
+*/
+
+
+#live {
+	height: 28px;
 }
 
 
+.live h2{
+	float: left;
+}
+
+.live p {
+	float: right;
+}
+
+.live p, h2 {
+	padding: 8px 0px 8px 0px;
+}
 
 
 /*
@@ -140,16 +252,32 @@ nav .nav li a:hover {
 **************************
 */
 
-.main {
+
+
+#main {
+	clear: both;
 	height: 280px;
 }
 
-.main img {
+
+ #map {
+	padding: 40px 0 40px 0px;
+}
+
+img {
 	float: left;
 }
 
+#map .dropdown {
 
 
+
+}
+
+#map {
+	border: 10px solid rgb(91, 99, 99) inherit; 
+	border-style: solid;
+}
 
 /*
 **************************
@@ -158,11 +286,19 @@ nav .nav li a:hover {
 */
 
 .service {
-	height: 326px;
+	height: 325px;
+	position: absolute;
 }
 
-.service img {
+.map {
 	float: left;
+	
+}
+
+#worship {
+	width: 198px 329px;
+	border-width: 10px;
+	border-color: rgb(91, 99, 99);
 }
 
 
@@ -175,7 +311,10 @@ nav .nav li a:hover {
 
 .update {
 			height: 435px;
-			margin: auto;
+}
+
+.update dl dt dd {
+	display: inline;
 }
 
 
