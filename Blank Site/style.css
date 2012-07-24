@@ -99,7 +99,7 @@
 }
 
 .logo {
-	float: left;
+	float: right;
 }
 
 /*
@@ -132,8 +132,6 @@ a {
 	border: 2em;
 }
 
-.dropdown li {
-}
 
 h1 {
 	font: 3.5em;
@@ -144,12 +142,12 @@ h1 {
 }
 
 
-#contact, #main, #other {
+#contact, #main, #other, #foot {
 	background: url(style/images/background.jpg);
 }
 
-#header, #service {
-	background: url(style/images/lowback.png);
+#header, #service{
+	background: url(style/images/headerback.jpg);
 }
 
 .group:before,
@@ -164,6 +162,97 @@ h1 {
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
+/*
+**************************
+* =dropdown
+**************************
+*/
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown p {
+	padding: 0 0 7px 8px;
+}
+
+ul.dropdown { 
+	position: relative; 
+	/*padding: 0 0 33px 0;*/
+}
+
+ul.dropdown li { 
+	font-weight: bold; 
+	float: left; zoom: 1; 
+	background: rgb(212,212,212)!important;
+
+}
+
+ul.dropdown a:hover	{ 
+	color: rgb(91,99,99); 
+}
+
+ul.dropdown a:active {
+ color: rgb(242,242,242);
+}
+
+ul.dropdown li a { 
+	display: block; 
+	/*padding: 4px 8px; */
+	border-right: 1px solid #333;
+	color: #222; 
+}
+
+ul.dropdown li:last-child a { 
+	border-right: none; 
+	} /* Doesn't work in IE */
+
+ul.dropdown li a.hover,
+ul.dropdown li a:hover { 
+	background:rgb(248,103,103); 
+	color: black; 
+	position: relative; 
+}
+ul.dropdown li.hover a { 
+	color: rgb(248,103,103); 
+}
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul { 
+	width: 220px; 
+	visibility: hidden; 
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+}
+
+ul.dropdown ul li { 
+	font-weight: normal; 
+	background: #f6f6f6; 
+	color: #000; 
+	border-bottom: 1px solid #ccc; 
+	float: none; 
+	} /* IE 6 & 7 Needs Inline Block */
+
+ul.dropdown ul li a	{
+ border-right: none;
+ width: 100%; 
+ display: inline-block; 
+} 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul { 
+	left: 100%; 
+	top: 0; 
+}
+
+ul.dropdown li:hover > ul	{ 
+	visibility: visible; 
+}
 
 /*
 **************************
@@ -189,13 +278,17 @@ header {
 	height: 125px;
 }
 
-nav img {
+nav a img {
 	float: left;
 	margin: auto;
 	padding: 40px 50px 40px 0px;
 }
 
-
+nav a img:hover {
+	background: #f86767;
+	color: white;
+	text-indent: 1px
+}
 
 nav .nav li{
 	float: left;
@@ -205,21 +298,21 @@ nav .nav li{
 	padding: 50px 18px;
 	text-transform: uppercase;
 	color: #f98181;
-
-
 }
 
 nav .nav li a {
 	padding: 6px 12px;
-	
 }
 
 nav .nav li a:hover {
 	background: #f86767;
 	color: white;
-
 }
 
+nav .selected {
+	background: #f86767;
+	color: white;
+}
 
 /*
 **************************
@@ -268,12 +361,6 @@ img {
 	float: left;
 }
 
-#map .dropdown {
-
-
-
-}
-
 #map {
 	border: 10px solid rgb(91, 99, 99) inherit; 
 	border-style: solid;
@@ -285,21 +372,31 @@ img {
 **************************
 */
 
-.service {
+/*#service {
 	height: 325px;
-	position: absolute;
 }
 
-.map {
+.img {
 	float: left;
-	
+	width: 330px;
+}
+
+.img h1 {
+	padding: 37px 0 30px 0;
+}
+
+.img img {
+	clear: both
 }
 
 #worship {
-	width: 198px 329px;
+	border: solid 13px rgb(91,99,99);
+	/*width: 330px;
+	height: 200px;*/
+	/*display: block;
 	border-width: 10px;
-	border-color: rgb(91, 99, 99);
-}
+	border-color: rgb(91, 99, 99);*/
+?
 
 
 
@@ -310,7 +407,8 @@ img {
 */
 
 .update {
-			height: 435px;
+	height: 435px; 
+	background: white;
 }
 
 .update dl dt dd {
@@ -325,8 +423,7 @@ img {
 **************************
 */
 
-footer {
-	clear: both;
+.foot footer {
 	height: 75px;
 
 }
@@ -337,3 +434,40 @@ footer ul li {
 	margin: auto;
 	padding: 20px 0px 40px 0px;
 }
+
+
+
+
+
+
+/*
+**************************
+* =Random Settings. 
+**************************
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
