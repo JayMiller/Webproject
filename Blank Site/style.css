@@ -3,112 +3,58 @@
 * =form
 **************************
 */
-
-#contact {
-	height: 240px;
-}
-
-.connect {
-	height: 60px;
-}
-
-.connect h2 {
-	float: right;
-}
-
-.connect h1, h2 {
-	padding: 26px 0 10px 10px;
-}
-
-
+#contact {height: 240px;}
+.connect {height: 60px;}
+.connect h2 {float: right;}
+.connect h1, h2 {padding: 26px 0 10px 10px;}
 .name{
 	float: left;
 	width: 260px;
 	padding: 0px 15px 0 10px;
 }
-
 .name p {
 	padding: 0 0 7px 7px;
 	clear: both;
 }
-
-#name {
-	padding-top: 15px;
-}
-
-
-#firstname {
-	
-	width: 110px;
-}
-
-#lastname {
-
-	width: 140px;
-}
-
+#name {padding-top: 15px;}
+#firstname {width: 110px;}
+#lastname {width: 140px;}
 #firstname, #lastname {
 	height: 30px;
 	float: left;
 }
-
-.email {
-	text-align: left;
-}
-
-#email {
-	width: 90px 185px;
-}
-
+.email {text-align: left;}
+#email {width: 90px 185px;}
 .message {
 	float: left;
 	padding: 0px 15px 36px 15px;
 }
-
-.message h2 {
-	padding: 0 0 7px 7px;
-}
-
+.message h2 {padding: 0 0 7px 7px;}
 #message {
 	height: 122px;
 	width: 366px;
 }
-
-
 .menu {
 	float: right;
 	width: 115px;
 	padding: 0 3 0 15px;
 }
-
-
-
 /*
 **************************
 * =social
 **************************
 */
-
 .social {
 	display: inline;
 	height: 22px;
 }
-
-.dropdown {
-	float: left;
-}
-
-.logo {
-	float: right;
-}
-
+.dropdown {	float: left;}
+.logo {	float: right;}
 /*
 **************************
 * =body
 **************************
 */
-
-
 .inner {
 	width: 830px;
 	margin: auto;
@@ -116,23 +62,12 @@
 	text-transform: uppercase;
 	color: rgb(129,135,135);
 }
-
 a {
 	color: rgb(248,103,103);
 	text-decoration: none;
-
 }
-
-.social ul li {
-	display: inline;
-}
-
-
-.dropdown {
-	border: 2em;
-}
-
-
+.social ul li {	display: inline;}
+.dropdown {border: 2em;}
 h1 {
 	font: 3.5em;
 	float: left;
@@ -140,28 +75,19 @@ h1 {
 	text-transform: uppercase;
 	text-indent: 10px;
 }
-
-
 #contact, #main, #other, #foot {
 	background: url(style/images/background.jpg);
 }
-
 #header, #service{
 	background: url(style/images/headerback.jpg);
 }
-
 .group:before,
 .group:after {
     content:"";
     display:table;
 }
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
+.group:after {clear:both;}
+.group {zoom:1; /* For IE 6/7 (trigger hasLayout) */}
 /*
 **************************
 * =dropdown
@@ -184,7 +110,6 @@ ul.dropdown li {
 	font-weight: bold; 
 	float: left; zoom: 1; 
 	background: rgb(212,212,212)!important;
-
 }
 
 ul.dropdown a:hover	{ 
@@ -259,37 +184,23 @@ ul.dropdown li:hover > ul	{
 * =media
 **************************
 */
-
-#media {
-	height: 21px;
-}
-
-
-
-
-
+#media {height: 21px;}
 /*
 **************************
 * =heading
 **************************
 */
-
-header {
-	height: 125px;
-}
-
+header {height: 125px;}
 nav a img {
 	float: left;
 	margin: auto;
 	padding: 40px 50px 40px 0px;
 }
-
 nav a img:hover {
 	background: #f86767;
 	color: white;
 	text-indent: 1px
 }
-
 nav .nav li{
 	float: left;
 	display: inline;
@@ -299,152 +210,87 @@ nav .nav li{
 	text-transform: uppercase;
 	color: #f98181;
 }
-
-nav .nav li a {
-	padding: 6px 12px;
-}
-
+nav .nav li a {padding: 6px 12px;}
 nav .nav li a:hover {
 	background: #f86767;
 	color: white;
 }
-
 nav .selected {
 	background: #f86767;
 	color: white;
 }
-
 /*
 **************************
 * =live
 **************************
 */
-
-
-#live {
-	height: 28px;
-}
-
-
-.live h2{
-	float: left;
-}
-
-.live p {
-	float: right;
-}
-
-.live p, h2 {
-	padding: 8px 0px 8px 0px;
-}
-
-
+#live {height: 28px;}
+.live h2{float: left;}
+.live p {float: right;}
+.live p, h2 {padding: 8px 0px 8px 0px;}
 /*
 **************************
 * =main
 **************************
 */
-
-
-
 #main {
 	clear: both;
 	height: 280px;
 }
-
-
- #map {
-	padding: 40px 0 40px 0px;
-}
-
-img {
-	float: left;
-}
-
+#map {padding: 40px 0 40px 0px;}
+img {	float: left;}
 #map {
 	border: 10px solid rgb(91, 99, 99) inherit; 
 	border-style: solid;
 }
-
 /*
 **************************
 * =service
 **************************
 */
-
-/*#service {
-	height: 325px;
-}
-
-.img {
+#service {height: 325px;}
+.worship {
 	float: left;
 	width: 330px;
 }
-
-.img h1 {
-	padding: 37px 0 30px 0;
-}
-
-.img img {
-	clear: both
-}
-
+.img h1 {padding: 37px 0 30px 0;}
+.img img {clear: both;}
 #worship {
 	border: solid 13px rgb(91,99,99);
-	/*width: 330px;
-	height: 200px;*/
+	/*width: 330px;*/
+	height: 200px;
 	/*display: block;
 	border-width: 10px;
 	border-color: rgb(91, 99, 99);*/
-?
-
-
-
+}
 /*
 **************************
 * =update
 **************************
 */
-
-.update {
+#update {
 	height: 435px; 
 	background: white;
 }
-
-.update dl dt dd {
+.update h1 {padding: 47px 28px 33px 10px;}
+.update ul {padding: 47px 10px 33px 0;}
+.update li {
 	display: inline;
+	padding: 47px 10px 33px 0;
 }
-
-
-
+.update li:first-child {padding-right: 13px;}
 /*
 **************************
 * =footer
 **************************
 */
-
-.foot footer {
-	height: 75px;
-
-}
-
+#foot {height: 75px;}
 footer ul li {
 	display: inline;
 	float: left;
 	margin: auto;
 	padding: 20px 0px 40px 0px;
 }
-
-
-
-
-
-
-/*
-**************************
-* =Random Settings. 
-**************************
-*/
 
 
 
