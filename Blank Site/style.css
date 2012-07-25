@@ -1,60 +1,8 @@
 /*
-**************************
-* =form
-**************************
-*/
-#contact {height: 240px;}
-.connect {height: 60px;}
-.connect h2 {float: right;}
-.connect h1, h2 {padding: 26px 0 10px 10px;}
-.name{
-	float: left;
-	width: 260px;
-	padding: 0px 15px 0 10px;
-}
-.name p {
-	padding: 0 0 7px 7px;
-	clear: both;
-}
-#name {padding-top: 15px;}
-#firstname {width: 110px;}
-#lastname {width: 140px;}
-#firstname, #lastname {
-	height: 30px;
-	float: left;
-}
-.email {text-align: left;}
-#email {width: 90px 185px;}
-.message {
-	float: left;
-	padding: 0px 15px 36px 15px;
-}
-.message h2 {padding: 0 0 7px 7px;}
-#message {
-	height: 122px;
-	width: 366px;
-}
-.menu {
-	float: right;
-	width: 115px;
-	padding: 0 3 0 15px;
-}
-/*
-**************************
-* =social
-**************************
-*/
-.social {
-	display: inline;
-	height: 22px;
-}
-.dropdown {	float: left;}
-.logo {	float: right;}
-/*
-**************************
-* =body
-**************************
-*/
+******************************
+ *****   =MISC   *****
+******************************
+*/ 
 .inner {
 	width: 830px;
 	margin: auto;
@@ -89,59 +37,98 @@ h1 {
 .group:after {clear:both;}
 .group {zoom:1; /* For IE 6/7 (trigger hasLayout) */}
 /*
-**************************
-* =dropdown
-**************************
-*/
+******************************
+ *****   =FORM   *****
+******************************
+*/ 
+#contact {max-height: 240px;}
+.connect {height: 60px;}
+.form h1 { padding-bottom: 13px;}
+.form a {float: right;}
+.form h1, .form a{
+	padding: 26px 10px 10px 0px;
+}
+.name{
+	clear: both;
+	float: left;
+	width: 260px;
+	padding: 0px 15px 0 10px;
+}
+.name p {
+	padding: 0 0 7px 7px;
+	clear: both;
+}
+#name {padding-top: 10px;}
+#firstname {width: 110px;}
+#lastname {width: 140px;}
+#firstname, #lastname {
+	height: 30px;
+	float: left;
+}
+.email {text-align: left;}
+#email {width: 90px 185px;}
+.message {
+	float: left;
+	padding: 0px 15px 36px 15px;
+}
+.message h2 {padding: 0 0 7px 7px;}
+#message {
+	height: 120px;
+	width: 366px;
+}
+section {
+	float: right;
+	width: 115px;
+	padding: 0 3 0 15px;
+}
+.form .submit {
+	float: right;
+	padding: 33px 0 0 27px;
+}
+/*
+******************************
+ *****   =SOCIAL   *****
+******************************
+*/ 
+.social {
+	display: inline;
+	height: 22px;
+}
+.dropdown {	float: left;}
+.logo {	float: right;}
 
+.social ul .dropdown {
+	height: 22px;
+}
+/*
+******************************
+ *****   =DROP_DOWN'S   *****
+******************************
+*/ 
 /* 
 	LEVEL ONE
 */
-ul.dropdown p {
-	padding: 0 0 7px 8px;
-}
-
-ul.dropdown { 
-	position: relative; 
-	/*padding: 0 0 33px 0;*/
-}
-
 ul.dropdown li { 
 	font-weight: bold; 
 	float: left; zoom: 1; 
 	background: rgb(212,212,212)!important;
-}
-
-ul.dropdown a:hover	{ 
-	color: rgb(91,99,99); 
-}
-
-ul.dropdown a:active {
- color: rgb(242,242,242);
-}
-
+} /* -- TO EDIT BOX -- */
+ul.dropdown a:hover	{color: rgb(91,99,99);}
+ul.dropdown a:active {color: rgb(242,242,242);}
 ul.dropdown li a { 
 	display: block; 
 	/*padding: 4px 8px; */
 	border-right: 1px solid #333;
-	color: #222; 
-}
-
-ul.dropdown li:last-child a { 
-	border-right: none; 
-	} /* Doesn't work in IE */
-
+	color: rgb(120,126,126); 
+} /*-- TO EDIT TEXT --*/
+ul.dropdown li:last-child a {border-right: none;}
 ul.dropdown li a.hover,
 ul.dropdown li a:hover { 
 	background:rgb(248,103,103); 
 	color: black; 
 	position: relative; 
 }
-ul.dropdown li.hover a { 
-	color: rgb(248,103,103); 
-}
-
-
+ul.dropdown li.hover a {color: rgb(248,103,103);}
 /* 
 	LEVEL TWO
 */
@@ -152,21 +139,18 @@ ul.dropdown ul {
 	top: 100%; 
 	left: 0; 
 }
-
 ul.dropdown ul li { 
 	font-weight: normal; 
 	background: #f6f6f6; 
 	color: #000; 
 	border-bottom: 1px solid #ccc; 
 	float: none; 
-	} /* IE 6 & 7 Needs Inline Block */
-
+	}
 ul.dropdown ul li a	{
  border-right: none;
  width: 100%; 
  display: inline-block; 
 } 
-
 /* 
 	LEVEL THREE
 */
@@ -174,87 +158,95 @@ ul.dropdown ul ul {
 	left: 100%; 
 	top: 0; 
 }
-
-ul.dropdown li:hover > ul	{ 
-	visibility: visible; 
-}
-
+ul.dropdown li:hover > ul	{visibility: visible;}
 /*
-**************************
-* =media
-**************************
-*/
+******************************
+ *****   =SOCIAL   *****
+******************************
+*/ 
 #media {height: 21px;}
 /*
-**************************
-* =heading
-**************************
-*/
-header {height: 125px;}
-nav a img {
+******************************
+ *****   =HEADER_PAGES   *****
+******************************
+*/ 
+#header {height: 125px;}
+header nav h1 {
+	width: 326px;
+	height: 42px;
 	float: left;
-	margin: auto;
-	padding: 40px 50px 40px 0px;
+	margin: 40px 50px 43px 0px;
+	text-indent: -9999px;
 }
-nav a img:hover {
-	background: #f86767;
-	color: white;
-	text-indent: 1px
+header h1 {
+	background: url(style/images/nlc_logo.png) no-repeat;
+	}
+header h1:hover {
+	background-position: 0 -42px;
 }
 nav .nav li{
 	float: left;
 	display: inline;
-	padding: 50px 0px 50px 50px;
+	padding: 50px 0px 48px 50px;
 	margin: 0px -10px;
 	padding: 50px 18px;
 	text-transform: uppercase;
-	color: #f98181;
 }
-nav .nav li a {padding: 6px 12px;}
-nav .nav li a:hover {
-	background: #f86767;
-	color: white;
+header a {
+	padding: 6px 12px 8px 12px;
+	color: rgb(91,99,99);
+} 
+header a:hover {
+	color: #f86767;
 }
 nav .selected {
+	color: white !important;
 	background: #f86767;
-	color: white;
 }
 /*
-**************************
-* =live
-**************************
-*/
+******************************
+ *****   =LIVE SERVICE   *****
+******************************
+*/ 
 #live {height: 28px;}
 .live h2{float: left;}
 .live p {float: right;}
 .live p, h2 {padding: 8px 0px 8px 0px;}
+
 /*
-**************************
-* =main
-**************************
-*/
+******************************
+ *****   =CAMPUSES   *****
+******************************
+*/ 
 #main {
 	clear: both;
 	height: 280px;
 }
-#map {padding: 40px 0 40px 0px;}
+#map {margin: 30px 0 40px 0px;}
 img {	float: left;}
 #map {
-	border: 10px solid rgb(91, 99, 99) inherit; 
-	border-style: solid;
+	display: block;
+	border: solid 10px rgb(91,99,99);
+}
+.map {
+	height: 200px;
+	width: 500px;
+	float: left;
+	margin-top: 40px;
+	background: black;
 }
 /*
-**************************
-* =service
-**************************
-*/
+******************************
+ *****   =SERVICES   *****
+******************************
+*/ 
 #service {height: 325px;}
 .worship {
 	float: left;
 	width: 330px;
 }
-.img h1 {padding: 37px 0 30px 0;}
-.img img {clear: both;}
+.img h1 { padding: 37px 0 30px 0; }
+.img img { clear: both; }
 #worship {
 	border: solid 13px rgb(91,99,99);
 	/*width: 330px;*/
@@ -264,27 +256,28 @@ img {	float: left;}
 	border-color: rgb(91, 99, 99);*/
 }
 /*
-**************************
-* =update
-**************************
-*/
+******************************
+ *****   =RECENT UPDATES   *****
+******************************
+*/ 
 #update {
 	height: 435px; 
 	background: white;
 }
-.update h1 {padding: 47px 28px 33px 10px;}
-.update ul {padding: 47px 10px 33px 0;}
+.update h1 { padding: 47px 28px 33px 10px; }
+.update ul { padding: 47px 10px 33px 0; }
 .update li {
 	display: inline;
 	padding: 47px 10px 33px 0;
 }
 .update li:first-child {padding-right: 13px;}
 /*
-**************************
-* =footer
-**************************
-*/
-#foot {height: 75px;}
+******************************
+ *****   =FOOTER   *****
+******************************
+*/ 
+#foot { height: 75px; }
+
 footer ul li {
 	display: inline;
 	float: left;
