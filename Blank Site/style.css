@@ -11,19 +11,19 @@
 	color: rgb(129,135,135);
 }
 a {
-	color: rgb(248,103,103);
+	color: rgb(91,99,99);
 	text-decoration: none;
-}
-.social ul li {	display: inline;}
-.dropdown {border: 2em;}
+}'
+a:hover { color: rgb(248,103,103); }
+.social ul li { display: inline; }
+.dropdown { border: 2em; }
 h1 {
 	font: 3.5em;
-	float: left;
 	color: rgb(45,49,49);
 	text-transform: uppercase;
 	text-indent: 10px;
 }
-#contact, #main, #other, #foot {
+#contact, #main, #other, #foot, #top_header {
 	background: url(style/images/background.jpg);
 }
 #header, #service{
@@ -34,44 +34,47 @@ h1 {
     content:"";
     display:table;
 }
-.group:after {clear:both;}
-.group {zoom:1; /* For IE 6/7 (trigger hasLayout) */}
+.group:after { clear: both; }
+.group { zoom: 1; }
 /*
 ******************************
  *****   =FORM   *****
 ******************************
 */ 
-#contact {max-height: 240px;}
-.connect {height: 60px;}
-.form h1 { padding-bottom: 13px;}
-.form a {float: right;}
+#contact { 
+	max-height: 237px; 
+	border-bottom: solid 1px rgb(181,181,181); 
+}
+.connect { height: 60px; }
+.form h1 { padding-bottom: 13px; float:left; }
+.form a { float: right; }
 .form h1, .form a{
-	padding: 26px 10px 10px 0px;
+	margin: 26px 10px 10px 0px;
 }
 .name{
 	clear: both;
 	float: left;
 	width: 260px;
-	padding: 0px 15px 0 10px;
+	margin: 0px 15px 0 10px;
 }
 .name p {
-	padding: 0 0 7px 7px;
+	margin: 0 0 7px 7px;
 	clear: both;
 }
-#name {padding-top: 10px;}
-#firstname {width: 110px;}
-#lastname {width: 140px;}
+#name { margin-top: 10px; }
+#firstname { width: 110px; }
+#lastname { width: 140px; }
 #firstname, #lastname {
 	height: 30px;
 	float: left;
 }
-.email {text-align: left;}
-#email {width: 90px 185px;}
+.email { text-align: left; }
+#email { width: 90px 185px; }
 .message {
 	float: left;
-	padding: 0px 15px 36px 15px;
+	margin: 0px 15px 36px 15px;
 }
-.message h2 {padding: 0 0 7px 7px;}
+.message h2 {margin: 0 0 7px 7px; }
 #message {
 	height: 120px;
 	width: 366px;
@@ -79,27 +82,49 @@ h1 {
 section {
 	float: right;
 	width: 115px;
-	padding: 0 3 0 15px;
+	margin: 0 3 0 15px;
 }
 .form .submit {
 	float: right;
-	padding: 33px 0 0 27px;
+	margin: 33px 0 0 27px;
 }
 /*
 ******************************
- *****   =SOCIAL   *****
+ *****   =TOP_HEADER  *****
 ******************************
 */ 
+#top_header {
+	height: 20px;
+	border: solid 1px white;
+}
 .social {
 	display: inline;
-	height: 22px;
 }
-.dropdown {	float: left;}
-.logo {	float: right;}
+.social h2 { 
+	float: left;
+	padding: 4px 20px 0 0;
+}
+.social img {
+	float: right;
+	margin: 4px 3px 0 16px 
+}
+.social_media a {
+	background: url(style/images/twitter_logo.png) no-repeat;
+	text-indent: -9999px;
+}
+.social_media a:hover {	background-position: 0 -13px; }
+.social .dropdown {	
+	float: left; 
+	margin-top: 4px;
+}
+.logo {	
+	float: left; 
+	margin: 4px 0 0 40px;
+}
+.logo li {
+	padding-right: 40px;
+}
 
-.social ul .dropdown {
-	height: 22px;
-}
 /*
 ******************************
  *****   =DROP_DOWN'S   *****
@@ -111,17 +136,18 @@ section {
 ul.dropdown li { 
 	font-weight: bold; 
 	float: left; zoom: 1; 
-	background: rgb(212,212,212)!important;
+	background: rgb(212,212,212);
 } /* -- TO EDIT BOX -- */
 ul.dropdown a:hover	{color: rgb(91,99,99);}
 ul.dropdown a:active {color: rgb(242,242,242);}
 ul.dropdown li a { 
+	float:  left;
 	display: block; 
 	/*padding: 4px 8px; */
 	border-right: 1px solid #333;
 	color: rgb(120,126,126); 
 } /*-- TO EDIT TEXT --*/
-ul.dropdown li:last-child a {border-right: none;}
+ul.dropdown li:last-child a {border-right: none; }
 ul.dropdown li a.hover,
 ul.dropdown li a:hover { 
 	background:rgb(248,103,103); 
@@ -161,16 +187,13 @@ ul.dropdown ul ul {
 ul.dropdown li:hover > ul	{visibility: visible;}
 /*
 ******************************
- *****   =SOCIAL   *****
-******************************
-*/ 
-#media {height: 21px;}
-/*
-******************************
  *****   =HEADER_PAGES   *****
 ******************************
 */ 
-#header {height: 125px;}
+#header {
+	height: 124px;
+	border-bottom: solid 1px rgb(218,217,217)
+}
 header nav h1 {
 	width: 326px;
 	height: 42px;
@@ -208,10 +231,13 @@ nav .selected {
  *****   =LIVE SERVICE   *****
 ******************************
 */ 
-#live {height: 28px;}
+#live {
+	height: 27px; 
+	border-bottom: solid 1px rgb(159,168,168) 
+}
 .live h2{float: left;}
 .live p {float: right;}
-.live p, h2 {padding: 8px 0px 8px 0px;}
+.live p, h2 {padding-top: 6px;}
 
 /*
 ******************************
@@ -219,8 +245,8 @@ nav .selected {
 ******************************
 */ 
 #main {
-	clear: both;
-	height: 280px;
+	height: 281px;
+	border-bottom: solid 1px rgb(181,181,181)
 }
 #map {margin: 30px 0 40px 0px;}
 img {	float: left;}
@@ -240,20 +266,36 @@ img {	float: left;}
  *****   =SERVICES   *****
 ******************************
 */ 
-#service {height: 325px;}
-.worship {
-	float: left;
-	width: 330px;
+#service {
+	height: 325px;
+	border: solid 1px white;
+	border-bottom: solid 1px rgb(207,210,210);
 }
-.img h1 { padding: 37px 0 30px 0; }
-.img img { clear: both; }
-#worship {
-	border: solid 13px rgb(91,99,99);
-	/*width: 330px;*/
-	height: 200px;
-	/*display: block;
-	border-width: 10px;
-	border-color: rgb(91, 99, 99);*/
+.worship h1 {
+	padding-top: 40px;
+	float: left;
+	text-align: left;
+}
+.worship a {
+	float: right;
+}
+#worship{
+	width: 301px; 
+	height: 170px;
+	/*background: url(style/images/worship.jpg) no-repeat;*/
+	/*background: rgb(30,32,32);*/
+	/*border-width: 15px; */
+	border: solid 14px rgb(91,99,99);
+	/*border-style: double;*/
+	float: left;
+	margin: 40px 0 0 10px;
+	position: relative;
+}
+.worship_info {
+	width: 424px;
+	margin-top: 54px;
+	float: left; 
+	background: white;
 }
 /*
 ******************************
@@ -261,23 +303,46 @@ img {	float: left;}
 ******************************
 */ 
 #update {
-	height: 435px; 
+	height: 432px; 
 	background: white;
 }
-.update h1 { padding: 47px 28px 33px 10px; }
+.update h1 { 
+	padding: 47px 28px 33px 10px; 
+	float: left;
+}
 .update ul { padding: 47px 10px 33px 0; }
 .update li {
 	display: inline;
 	padding: 47px 10px 33px 0;
 }
 .update li:first-child {padding-right: 13px;}
+.update li:last-child {margin-left: 155px; }
+.update img {
+	padding-top: 0px 10px;
+	border: solid 11px rgb(239,239,239)
+}
+.img1 {
+	float: left;
+}
+.img2 {
+	float: left;
+	margin: 0 28px 0 28px
+}
+.img3	{
+	float: left;
+}
+.update h2, p {
+	margin-left: 11px;
+}
 /*
 ******************************
  *****   =FOOTER   *****
 ******************************
 */ 
-#foot { height: 75px; }
-
+#foot { 
+	height: 75px; 
+	border-top: solid 1px rgb(164,176,176);
+}
 footer ul li {
 	display: inline;
 	float: left;
