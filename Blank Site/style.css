@@ -13,12 +13,12 @@
 a {
 	color: rgb(91,99,99);
 	text-decoration: none;
-}'
+}
 a:hover { color: rgb(248,103,103); }
 .social ul li { display: inline; }
 .dropdown { border: 2em; }
 h1 {
-	font: 3.5em;
+	font-size: 12.5px;
 	color: rgb(45,49,49);
 	text-transform: uppercase;
 	text-indent: 10px;
@@ -35,7 +35,6 @@ h1 {
     display:table;
 }
 .group:after { clear: both; }
-.group { zoom: 1; }
 /*
 ******************************
  *****   =FORM   *****
@@ -63,13 +62,18 @@ h1 {
 }
 #name { margin-top: 10px; }
 #firstname { width: 110px; }
-#lastname { width: 140px; }
+#lastname { width: 141px; margin-left: 4px;}
 #firstname, #lastname {
-	height: 30px;
+	height: 28px;
 	float: left;
+	border-radius: 3px;
 }
 .email { text-align: left; }
-#email { width: 90px 185px; }
+#email { 
+	width:186px; 
+	height: 27px; 
+	border-radius: 3px; 
+}
 .message {
 	float: left;
 	margin: 0px 15px 36px 15px;
@@ -78,11 +82,12 @@ h1 {
 #message {
 	height: 120px;
 	width: 366px;
+	border-radius: 3px;
 }
 section {
 	float: right;
 	width: 115px;
-	margin: 0 3 0 15px;
+	margin: 0 3px 0 15px;
 }
 .form .submit {
 	float: right;
@@ -108,11 +113,14 @@ section {
 	float: right;
 	margin: 4px 3px 0 16px 
 }
-.social_media a {
-	background: url(style/images/twitter_logo.png) no-repeat;
+.social .facebook {
 	text-indent: -9999px;
 }
-.social_media a:hover {	background-position: 0 -13px; }
+.social .facebook:first-child{
+	background: url(style/images/twitter_logo.png) no-repeat;
+	float: right;
+}
+.facebook a:hover {	background-position: 0 -13px; }
 .social .dropdown {	
 	float: left; 
 	margin-top: 4px;
@@ -135,7 +143,7 @@ section {
 */
 ul.dropdown li { 
 	font-weight: bold; 
-	float: left; zoom: 1; 
+	float: left;
 	background: rgb(212,212,212);
 } /* -- TO EDIT BOX -- */
 ul.dropdown a:hover	{color: rgb(91,99,99);}
@@ -272,9 +280,7 @@ img {	float: left;}
 	border-bottom: solid 1px rgb(207,210,210);
 }
 .worship h1 {
-	padding-top: 40px;
 	float: left;
-	text-align: left;
 }
 .worship a {
 	float: right;
