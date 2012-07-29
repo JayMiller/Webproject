@@ -7,6 +7,7 @@
 	width: 830px;
 	margin: auto;
 	font-family: 'PT Sans', sans-serif;
+	l
 	text-transform: uppercase;
 	color: rgb(129,135,135);
 }
@@ -41,10 +42,11 @@ h1 {
 ******************************
 */ 
 #contact { 
+	height: 400px;
 	max-height: 237px; 
 	border-bottom: solid 1px rgb(181,181,181); 
 }
-.connect { height: 60px; }
+.connect { height: 60px; } 
 .form h1 { padding-bottom: 13px; float:left; }
 .form a { float: right; }
 .form h1, .form a{
@@ -53,7 +55,7 @@ h1 {
 .name{
 	clear: both;
 	float: left;
-	width: 260px;
+	width: 250px;
 	margin: 0px 15px 0 10px;
 }
 .name p {
@@ -61,17 +63,17 @@ h1 {
 	clear: both;
 }
 #name { margin-top: 10px; }
-#firstname { width: 110px; }
-#lastname { width: 141px; margin-left: 4px;}
+#firstname { width: 106px; }
+#lastname { width: 126px; margin-left: 9px;}
 #firstname, #lastname {
 	height: 28px;
 	float: left;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 .email { text-align: left; }
 #email { 
-	width:186px; 
-	height: 27px; 
+	width:250px; 
+	height: 28px; 
 	border-radius: 3px; 
 }
 .message {
@@ -100,7 +102,8 @@ section {
 */ 
 #top_header {
 	height: 20px;
-	border: solid 1px white;
+	border-top: solid 3px white;
+	border-bottom: solid 1px white;
 }
 .social {
 	display: inline;
@@ -199,7 +202,7 @@ ul.dropdown li:hover > ul	{visibility: visible;}
 ******************************
 */ 
 #header {
-	height: 124px;
+	height: 115px;
 	border-bottom: solid 1px rgb(218,217,217)
 }
 header nav h1 {
@@ -219,11 +222,12 @@ nav .nav li{
 	float: left;
 	display: inline;
 	padding: 50px 0px 48px 50px;
-	margin: 0px -10px;
+	margin: 0px -20px;
 	padding: 50px 18px;
 	text-transform: uppercase;
 }
 header a {
+	font-weight: bold;
 	padding: 6px 12px 8px 12px;
 	color: rgb(91,99,99);
 } 
@@ -231,8 +235,12 @@ header a:hover {
 	color: #f86767;
 }
 nav .selected {
+	font-weight: bold;
 	color: white !important;
 	background: #f86767;
+	border-radius: 3px;
+	box-shadow: inset	1px 1px 2px black;
+	text-shadow: 1px 1px 2px #000;
 }
 /*
 ******************************
@@ -256,7 +264,11 @@ nav .selected {
 	height: 281px;
 	border-bottom: solid 1px rgb(181,181,181)
 }
-#map {margin: 30px 0 40px 0px;}
+#map {
+	margin: 30px 0 40px 0px;
+	width: 320px;
+	height: 200px;
+}
 img {	float: left;}
 #map {
 	display: block;
@@ -264,7 +276,7 @@ img {	float: left;}
 }
 .map {
 	height: 200px;
-	width: 500px;
+	width: 490px;
 	float: left;
 	margin-top: 40px;
 	background: black;
@@ -286,21 +298,22 @@ img {	float: left;}
 	float: right;
 }
 #worship{
-	width: 301px; 
-	height: 170px;
+	width: 320px; 
+	height: 180px;
 	/*background: url(style/images/worship.jpg) no-repeat;*/
 	/*background: rgb(30,32,32);*/
 	/*border-width: 15px; */
-	border: solid 14px rgb(91,99,99);
+	border: solid 10px rgb(91,99,99);
 	/*border-style: double;*/
 	float: left;
-	margin: 40px 0 0 10px;
+	margin: 40px 0 0;
 	position: relative;
 }
 .worship_info {
-	width: 424px;
-	margin-top: 54px;
-	float: left; 
+	height: 180px;
+	width: 490px;
+	float: left;
+	margin-top: 45px;
 	background: white;
 }
 /*
@@ -313,33 +326,35 @@ img {	float: left;}
 	background: white;
 }
 .update h1 { 
-	padding: 47px 28px 33px 10px; 
+	padding: 0 28px 0 10px; 
 	float: left;
 }
-.update ul { padding: 47px 10px 33px 0; }
+.campus { 
+	padding: 47px 10px 33px 0; 
+	font-size: 12px;
+}
 .update li {
 	display: inline;
 	padding: 47px 10px 33px 0;
 }
-.update li:first-child {padding-right: 13px;}
-.update li:last-child {margin-left: 155px; }
+.update li:first-child {
+	padding-right: 13px;
+	font-size: 11px;
+}
+/*.campus a {*/
+	/*float: right;*/
+/*}*/
 .update img {
 	padding-top: 0px 10px;
 	border: solid 11px rgb(239,239,239)
 }
-.img1 {
-	float: left;
-}
+.img1 {	float: left; }
 .img2 {
 	float: left;
 	margin: 0 28px 0 28px
 }
-.img3	{
-	float: left;
-}
-.update h2, p {
-	margin-left: 11px;
-}
+.img3	{	float: left; }
+.update h2, p {	margin-left: 11px; }
 /*
 ******************************
  *****   =FOOTER   *****
